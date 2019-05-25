@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 require "pry"
 
+=======
+>>>>>>> 9cca434ac8b287ddabc1d92704044f71997dd324
 class TicTacToe
   
   def initialize 
@@ -26,6 +29,7 @@ class TicTacToe
   end
   
   def input_to_index(user_input)
+<<<<<<< HEAD
      user_input.to_i - 1
   end
 
@@ -120,3 +124,19 @@ class TicTacToe
   
    end
 end
+=======
+    @index = user_input.to_i - 1
+  end
+
+   def move(index, token= "X")
+     @board[@index] = token
+  end
+  
+    def position_taken?(index)
+     @index != "" || @index != " " || @index != nil 
+    end   
+     
+     
+     
+   end
+>>>>>>> 9cca434ac8b287ddabc1d92704044f71997dd324
